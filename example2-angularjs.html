@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- ng-init is used to initialize variables with values-->
+    <div ng-app="" ng-init="Income=1000;Rate=0.13">
+        <!-- {{Expression}} can be replaced by using ng-bind -->
+        <p>Total Tax: {{ Income * Rate }} </p>
+        <p>Total Tax: <span data-ng-bind="Income * Rate"></span></p>
+    </div>
+    
+</body>
+</html>
+
+
